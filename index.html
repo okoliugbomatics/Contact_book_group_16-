@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Book - Group 16 EMCICT311</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>📒 Contact Book</h1>
+    <p>EMCICT311 - Group 16 Project</p>
+  </header>
+
+  <div class="form-card">
+    <h3 id="form-title">Add New Contact</h3>
+    <input type="text" id="name" placeholder="Full Name *">
+    <input type="tel" id="phone" placeholder="Phone e.g 08012345678 *">
+    <input type="email" id="email" placeholder="Email *">
+    <input type="text" id="address" placeholder="Address">
+    <div class="btn-row">
+      <button id="saveBtn" onclick="saveContact()">Save Contact</button>
+      <button id="cancelBtn" onclick="cancelEdit()" style="display:none;background:#666;">Cancel</button>
+    </div>
+  </div>
+
+  <div class="search-box">
+    <input type="text" id="search" placeholder="🔍 Search by name or phone..." onkeyup="renderContacts()">
+    <span id="count">0 contacts</span>
+  </div>
+
+  <div id="contactList" class="list"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
