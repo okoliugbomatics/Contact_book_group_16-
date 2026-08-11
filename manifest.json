@@ -1,9 +1,15 @@
 {
-  "name": "Contact Book Group 16",
+  "name": "Contact Book - Group 16",
   "short_name": "Contact Book",
-  "icons": [{"src": "icon.png","sizes": "512x512","type": "image/png"}],
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#0b63ce",
-  "theme_color": "#0b63ce"
+  "background_color": "#ffffff",
+  "theme_color": "#4f46e5",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
